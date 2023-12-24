@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <!-- <link href="{% static 'css/style8.css' %}" rel="stylesheet"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 style="text-align:center; color: aliceblue; background-color:black"> ADD Cargo Details</h1>
+        <form method="POST" >
+            {% csrf_token %}
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"> Cargo Weight</label>
+            <input type="text" class="form-control" id="weight" name="weight"
+                aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"> Price </label>
+            <input type="text" class="form-control" id="lname" name="price"
+                aria-describedby="emailHelp">
+        </div>
+        <div class="d-grid gap-2">
+                        
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
+    </div>
+
+
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+
+</html> 

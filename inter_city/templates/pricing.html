@@ -1,0 +1,203 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <!-- <link href="{% static 'css/style.css' %}" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container" ></div> 
+   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/car-7.jpg' %}" class="d-block w-100" style="height: 600px;" alt="...">
+      </div>
+      
+    </div>
+    <div class="carousel-caption  ">
+        <h1 > Car Rates Pricing</h1>
+        <!-- <p >Some representative placeholder content for the third slide.</p> -->
+      </div>
+    </div>
+  </div>
+
+  </div>
+<div class="container" >
+    <div class="row my-5">
+        <div class="col-3 "></div>
+        <div class="col-3 text-center " style="font-size:xx-large; background-color:silver; height: 75px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" ><h4 style="margin-top:22px; color:brown;">Per Hour Rate</h4></div>
+        <div class="col-3 text-center" style="font-size:xx-larger; background-color:silver; height: 75px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"> <h4 style="margin-top:22px; color:saddlebrown;">Per Day Rate</h4></div>
+        <div class="col-3 text-center" style="font-size:xx-larger; background-color:silver; height: 75px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"><h4 style="margin-top:22px; color:rgb(239, 15, 15);">Leasing</h4></div>
+    </div>
+    <div class="row my-1" >
+        <!-- <div class="col-2">hii  </div> -->
+        <div class="col-3"><img src="{% static 'images/car-1.jpg' %}" class="d-block img-fluid" alt="...">
+            <h4 style="margin-top: 10px; color:darkolivegreen; font-family: Arial, Helvetica, sans-serif;">Cheverolet SUV Car</h4>
+            <p class="mb-0 rated">
+                <span style="font-family:Arial, Helvetica, sans-serif; font-size: larger;">rated:</span>
+                <span class="ion-ios-star"></span>
+                <span class="ion-ios-star"></span>
+                <span class="ion-ios-star"></span>
+                <span class="ion-ios-star"></span>
+                <span class="ion-ios-star"></span>
+            </p></div>
+        <div class="col-3 text-center " style=" background-color:silver; height: 150 px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" ><div class="price-rate">
+            <h3 style="margin-top:65px;">
+                <span class="num" style="color:gold;" ><small class="currency">$</small> 10.99</span>
+                <span class="per"><small>/per hour</small></span>
+            </h3>
+            <span class="subheading">$3/hour fuel surcharges</span><hr>
+            <a class="btn btn-warning   " href="#" role="button">Rent the car</a>
+
+        </div></div> 
+    <div class="col-3 text-center" style=" background-color:silver; height:250px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+        <div class="price-rate">
+        <h3 style="margin-top:65px;">
+            <span class="num" style="color:gold;"><small class="currency">$</small> 60.99</span>
+            <span class="per"><small>/per day</small></span>
+        </h3>
+        <span class="subheading">$3/hour fuel surcharges</span><hr>
+        <a class="btn btn-warning" href="#" role="button">Rent the car</a>
+</div></div>
+<div class="col-3 text-center" style="background-color:silver; height:250px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+    <div class="price-rate">
+    <h3 style="margin-top:65px;">
+        <span class="num" style="color:gold;"><small class="currency">$</small> 995.99</span>
+        <span class="per"><small>/per month</small></span>
+    </h3>
+    <span class="subheading">$3/hour fuel surcharges</span><hr>
+    <a class="btn btn-warning" href="#" role="button">Rent the car</a>
+</div></div>   </div>
+        <div class="row my-1">  <div class="col-3"><img src="{% static 'images/car-2.jpg' %}" class="d-block img-fluid" alt="...">
+            <h4 style="margin-top: 10px; color:darkolivegreen; font-family: Arial, Helvetica, sans-serif;">Cheverolet SUV Car</h4>
+            <p class="mb-0 rated">
+                <span style="font-family:Arial, Helvetica, sans-serif; font-size: larger;">rated:</span>
+                <span class="ion-ios-star"></span>
+                <span class="ion-ios-star"></span>
+                <span class="ion-ios-star"></span>
+                <span class="ion-ios-star"></span>
+                <span class="ion-ios-star"></span>
+            </p></div>
+        <div class="col-3 text-center" style="background-color:silver; height:250px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+            <div class="price-rate">
+            <h3 style="margin-top:65px;">
+                <span class="num" style="color:gold;"><small class="currency">$</small> 10.99</span>
+                <span class="per"><small>/per hour</small></span>
+            </h3>
+            <span class="subheading">$3/hour fuel surcharges</span><hr>
+            <a class="btn btn-warning" href="#" role="button">Rent the car</a>
+        </div></div> 
+    <div class="col-3 text-center"style="background-color:silver; height:250px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+        <div class="price-rate">
+        <h3 style="margin-top:65px;">
+            <span class="num" style="color:gold;"><small class="currency">$</small> 60.99</span>
+            <span class="per"><small>/per day</small></span>
+        </h3>
+        <span class="subheading">$3/hour fuel surcharges</span><hr>
+        <a class="btn btn-warning" href="#" role="button">Rent the car</a>
+</div></div>
+<div class="col-3 text-center" style="background-color:silver; height:250px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+    <div class="price-rate">
+    <h3 style="margin-top:65px;">
+        <span class="num" style="color:gold;"><small class="currency">$</small> 995.99</span>
+        <span class="per"><small>/per month</small></span>
+    </h3>
+    <span class="subheading">$3/hour fuel surcharges</span><hr>
+    <a class="btn btn-warning" href="#" role="button">Rent the car</a>
+</div></div>   </div> 
+       <div class="row my-1"> <div class="col-3"><img src="{% static 'images/car-3.jpg' %}" class="d-block img-fluid" alt="...">
+        <h4 style="margin-top: 10px; color:darkolivegreen; font-family: Arial, Helvetica, sans-serif;">Cheverolet SUV Car</h4>
+        <p class="mb-0 rated">
+            <span style="font-family:Arial, Helvetica, sans-serif; font-size: larger;">rated:</span>
+            <span class="ion-ios-star"></span>
+            <span class="ion-ios-star"></span>
+            <span class="ion-ios-star"></span>
+            <span class="ion-ios-star"></span>
+            <span class="ion-ios-star"></span>
+        </p></div>
+       <div class="col-3 text-center" style="background-color:silver; height:250px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+        <div class="price-rate">
+        <h3 style="margin-top:65px;">
+            <span class="num" style="color:gold;"><small class="currency">$</small> 10.99</span>
+            <span class="per"><small>/per hour</small></span>
+        </h3>
+        <span class="subheading">$3/hour fuel surcharges</span><hr>
+        <a class="btn btn-warning" href="#" role="button">Rent the car</a>
+    </div></div> 
+<div class="col-3 text-center" style="background-color:silver; height:250px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+    <div class="price-rate">
+    <h3 style="margin-top:65px;">
+        <span class="num" style="color:gold;"><small class="currency">$</small> 60.99</span>
+        <span class="per"><small>/per day</small></span>
+    </h3>
+    <span class="subheading">$3/hour fuel surcharges</span><hr>
+    <a class="btn btn-warning" href="#" role="button">Rent the car</a>
+</div></div>
+<div class="col-3 text-center" style="background-color:silver; height:250px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+    <div class="price-rate">
+<h3 style="margin-top:65px;">
+    <span class="num" style="color:gold;"><small class="currency">$</small> 995.99</span>
+    <span class="per"><small>/per month</small></span>
+</h3>
+<span class="subheading">$3/hour fuel surcharges</span><hr>
+<a class="btn btn-warning" href="#" role="button">Rent the car</a>
+</div></div>   </div>
+       <div class="row my-1"><div class="col-3"><img src="{% static 'images/car-4.jpg' %}" class="d-block img-fluid" alt="...">
+        <h4 style="margin-top: 10px; color:darkolivegreen; font-family: Arial, Helvetica, sans-serif;">Cheverolet SUV Car</h4>
+        <p class="mb-0 rated">
+            <span style="font-family:Arial, Helvetica, sans-serif; font-size: larger;">rated:</span>
+            <span class="ion-ios-star"></span>
+            <span class="ion-ios-star"></span>
+            <span class="ion-ios-star"></span>
+            <span class="ion-ios-star"></span>
+            <span class="ion-ios-star"></span>
+        </p></div>
+       <div class="col-3 text-center" style="background-color:silver; height:250px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+        <div class="price-rate">
+        <h3 style="margin-top:65px;">
+            <span class="num" style="color:gold;"><small class="currency">$</small> 10.99</span>
+            <span class="per"><small>/per hour</small></span>
+        </h3>
+        <span class="subheading">$3/hour fuel surcharges</span><hr>
+        <a class="btn btn-warning" href="#" role="button">Rent the car</a>
+    </div></div> 
+<div class="col-3 text-center" style="background-color:silver; height:250px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+    <div class="price-rate">
+    <h3 style="margin-top:65px;">
+        <span class="num" style="color:gold;"><small class="currency">$</small> 60.99</span>
+        <span class="per"><small>/per day</small></span>
+    </h3>
+    <span class="subheading">$3/hour fuel surcharges</span><hr>
+    <a class="btn btn-warning" href="#" role="button">Rent the car</a>
+</div></div>
+<div class="col-3 text-center" style="background-color:silver; height:250px;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+    <div class="price-rate">
+<h3 style="margin-top:65px;">
+    <span class="num" style="color:gold;"><small class="currency">$</small> 995.99</span>
+    <span class="per"><small>/per month</small></span>
+</h3>
+<span class="subheading">$3/hour fuel surcharges</span><hr>
+<a class="btn btn-success" href="#" role="button">Rent the car</a>
+</div></div>   </div></div>
+        
+    
+</div>
+
+      <script src="{% static 'js/jquery.js' %}"></script>
+      <script src="{% static 'js/popper.js' %}"></script>
+      <script src="{% static 'js/bootstrap.js' %}"></script>
+  
+ </body>
+</html> 

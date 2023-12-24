@@ -1,0 +1,19 @@
+body{
+    background: url('/static/images/image_7.jpg') no-repeat top fixed; width:100%; height:70%;
+    background-size: cover;
+    position: relative;
+}
+h1{
+    /* color: blue; */
+    
+}
+.container{ */
+    /* border: 1px; */
+    /* width: 70%;
+    height: 90%; */
+    /* margin-top: 5vh; */
+    /* border:0px solid #fff; padding:40px 40px;
+    -webkit-box-shadow: -1px 4px 26px 11px;
+-moz-box-shadow: -1px 4px 26px 11px ;
+box-shadow: -1px 4px 26px 11px  ;
+}

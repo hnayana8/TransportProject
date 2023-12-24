@@ -1,0 +1,198 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <!-- <link href="{% static 'css/style.css' %}" rel="stylesheet"> -->
+    <title>Document</title>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Intra City Hoquin</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="justify-content-end mx-5" >
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active mx-2" aria-current="page" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="{% url 'about' %}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="{% url 'pricing' %}">Pricing</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="{% url 'login' %}">Customer Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="{% url 'driver_login' %}">Driver Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="{% url 'admin_login' %}">Admin</a>
+              </li>
+              
+            </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- {% for message in messages %} 
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{message}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  
+  {% endfor %} -->
+      <img src="{% static 'images/bg_1.jpg' %}" alt="My image" style="width:100%; hight:100vh;">
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <span style="color: gold ;">our services</span>
+            <h1 class="fw-light" style="color:black;">our services</h1>
+            
+          </div>
+        </div>
+      </section>
+      <div class="container my-2">
+      <div class="row">
+        
+        <div class="col-sm-4">
+         
+          <h3 class="heading mx-5">24/7 Car Support</h3>
+          <p style="font-size:20px; font-family: Arial, Helvetica, sans-serif; color:darkgray;">A small river named Duden flows by their place and supplies it with you</p>
+        </div>
+        <div class="col-sm-4">
+         
+          <h3 class="heading mx-5 ">Rental Cars</h3>
+          <p style="font-size:20px; font-family: Arial, Helvetica, sans-serif; color: darkgrey;">A small river named Duden flows by their place and supplies it with you</p>
+        </div>
+        <div class="col-sm-4">
+         
+          <h3 class="heading mx-5">Reservation</h3>
+          <p style="font-size:20px; font-family: Arial, Helvetica, sans-serif;color: darkgrey;">A small river named Duden flows by their place and supplies it with you</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row my-4">
+        <div class="col-xl-3 ">
+          <div class="card" style="width: 17rem; height: 21rem;">
+            <img src="{% static 'images/car-3.jpg' %}" class="card-img-top" style="height:35vh;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Mercedes Grand Sedan</h5>
+              <p style="font-size:18px; color: silver;" class="card-text  text-center">AUDI</p>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-4">Book</a>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-3">Detailes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 ">
+          <div class="card" style="width: 17rem; height: 21rem;">
+            <img src="{% static 'images/car-2.jpg' %}" class="card-img-top" style="height:35vh;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Mercedes Grand Sedan</h5>
+              <p style="font-size:18px; color: silver;" class="card-text  text-center">FORD</p>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-4">Book</a>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-3">Detailes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="card" style="width: 17rem; height: 21rem;">
+            <img src="{% static 'images/car-4.jpg' %}" class="card-img-top" style="height:35vh;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Mercedes Grand Sedan</h5>
+              <p style="font-size:18px; color: silver;" class="card-text  text-center">MERCEDES</p>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-4">Book</a>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-3">Detailes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="card" style="width:  17rem; height: 21rem;">
+            <img src="{% static 'images/car-8.jpg' %}" class="card-img-top" style="height:35vh;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Mercedes Grand Sedan</h5>
+              <p style="font-size:18px; color: silver;" class="card-text  text-center">BMW</p>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-4">Book</a>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-3">Detailes</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="container">
+          <div class="row my-4">         
+        <div class="col-xl-3">
+          <div class="card" style="width:  17rem; height: 21rem;">
+            <img src="{% static 'images/car-7.jpg' %}" class="card-img-top" style="height:35vh;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Mercedes Grand Sedan</h5>
+              <p style="font-size:18px; color: silver;" class="card-text  text-center">BMW</p>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-4">Book</a>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-3">Detailes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="card" style="width:  17rem; height: 21rem;">
+            <img src="{% static 'images/car-13.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Mercedes Grand Sedan</h5>
+              <p style="font-size:18px; color: silver;" class="card-text  text-center">FORD</p>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-4">Book</a>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-3">Detailes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="card" style="width:  17rem; height: 21rem;">
+            <img src="{% static 'images/car-6.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Mercedes Grand Sedan</h5>
+              <p style="font-size:18px; color: silver;" class="card-text  text-center">AUDI</p>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-4">Book</a>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-3">Detailes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3">
+          <div class="card" style="width:  17rem; height: 21rem;">
+            <img src="{% static 'images/car-1.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Mercedes Grand Sedan</h5>
+              <p style="font-size:18px; color: silver;" class="card-text  text-center">MARCEDES</p>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-4">Book</a>
+              <a href="{% url 'login' %}" class="btn btn-outline-warning my-1 mx-3">Detailes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+      <!-- <p style="background-image: url('static/images/bg_1.jpg');"></p> -->
+      <script src="{% static 'js/jquery.js' %}"></script>
+      <script src="{% static 'js/popper.js' %}"></script>
+      <script src="{% static 'js/bootstrap.js' %}"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <!-- <script>
+        {% for message in messages %}
+      swal("   {{message}}");
+      
+      {% endfor %}
+    </script> -->
+</body>
+</html>

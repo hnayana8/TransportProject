@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- As a link -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid justify-content-center">
+      <a class="navbar-brand " href="#">About US </a>
+    </div>
+  </nav>
+  
+  <!-- As a heading -->
+ 
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <span style="color: gold ;">our services</span>
+            <h1 class="fw-light" style="color:black;">our services</h1>
+            
+          </div>
+        </div>
+      </section>
+      <div class="container my-2">
+      <div class="row">
+        
+        <div class="col-sm-4">
+         
+          <h3 class="heading mx-5">24/7 Car Support</h3>
+          <p style="font-size:20px; font-family: Arial, Helvetica, sans-serif; color:darkgray;">A small river named Duden flows by their place and supplies it with you</p>
+        </div>
+        <div class="col-sm-4">
+         
+          <h3 class="heading mx-5 ">Rental Cars</h3>
+          <p style="font-size:20px; font-family: Arial, Helvetica, sans-serif; color: darkgrey;">A small river named Duden flows by their place and supplies it with you</p>
+        </div>
+        <div class="col-sm-4">
+         
+          <h3 class="heading mx-5">Reservation</h3>
+          <p style="font-size:20px; font-family: Arial, Helvetica, sans-serif;color: darkgrey;">A small river named Duden flows by their place and supplies it with you</p>
+        </div>
+      </div>
+    </div>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-6">
+            <img src="{% static 'images/image_1.jpg' %}" alt="My image" style="width:90vh; height: 80vh;">
+        </div>
+        <div class="col-6 " style="margin-bottom:55px;">
+            <span class="subheading" style="color:gold;font-size:xx-large; font-family:'Times New Roman', Times, serif">About us</span>
+	            <h2 class="mb-4">Choose A Perfect Car</h2>
+
+	            <p>A small river named Duden flows by their place and supplies it with <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nulla minus ullam repellat illo quibusdam, totam the necessary regelialia. It is a paradisematic country, in which roasted  parts of sentences fly into your mouth.</p>
+	            <p>On her way she met a copy. The copy warned the Little Blind Text<br> that where it came from it would have been rewritten a thousand <br>times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, <br>safe country. <br>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+	            <p><a class="btn btn-outline-warning" href="#" role="button">Search Vehicle</a>
+                </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+
+</body>
+</html>

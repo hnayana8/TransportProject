@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      {% if  forms %}
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col"> Driver name</th>
+           
+            <th scope="col">Area</th>
+            <th scope="col">Driver Vehicle Image</th>
+            <th scope="col">Driver mobile No</th>
+            <th scope="col">Driver Gadi No</th>
+
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for fm in forms  %}
+          <tr>
+            <th scope="row">{{forloop.counter}}</th>
+            <td colspan="">{{fm.dfname}}</td>
+            <!-- <td colspan="">{{fm.address}}</td> -->
+            <td colspan="">{{fm.address}}</td>
+            <td>{% if fm.image %}<img src="/media/{{fm.image}}" class="img img-responsive " height="50px" width="60px">{% endif %}  </td>
+            <!-- <td colspan="">{{fm.dname}}</td> -->
+            <td colspan="">{{fm.dcontact}}</td>
+            <td colspan="">{{fm.vno}}</td>
+             
+             <td colspan=""><a href="{% url 'book_car' %}" class="btn btn-primary" type="submit">Book Rides</a>  </td>            
+             
+          </tr>
+          {% endfor %}</tbody></table>{% endif %}
+    </div></div>
+    <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/popper.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+</html>

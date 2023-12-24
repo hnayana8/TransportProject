@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style8.css' %}" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container my-5">
+        {% for message in messages %} 
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          {{message}}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+        
+        
+        {% endfor %}
+        <h1 style="text-align:center; color: aliceblue; background-color:black">Driver Registration</h1>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="Username" name="Username" ria-describedby="username">
+                  
+                      </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="dfname" name="dfname">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lname" name="lname"
+                                    aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="typeambulance" class="form-label">Full Address</label>
+                        <input type="text" class="form-control" id="address" name="address">
+                    </div>
+                     
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Contact No</label>
+                        <input type="text" class="form-control" id="phone" name="dcontact">
+                    </div>
+                    <div class="mb-3" >
+                        <label for="hname" class="form-label">Lic no:</label>
+                        <input type="text" class="form-control" id="lno" name="lno">
+
+                    </div>
+                    <div class="mb-3" >
+                        <label for="vno" class="form-label">Vehicle No:</label>
+                        <input type="vno" class="form-control" id="vno" name="vno">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+               
+                        <label for="hname" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="formFile" class="form-label" accept="images/*">Choose Vehicle image</label>
+                        <input class="form-control" type="file" id="formFile" name="image">
+                </div>
+                    
+                   
+                    
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label for="pday" class="form-label">Per Day</label>
+                            <input type="text" class="form-control" id="pday" name="pday">
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <label for="pet_hours" class="form-label">Per pet_hours</label>
+                                <input type="text" class="form-control" id="phours" name="phours">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="mb-3">
+                                <label for="pet_month" class="form-label">Per Month</label>
+                                <input type="text" class="form-control" id="pmonth" name="pmonth">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="pass1" name="pass1">
+                    </div>
+                    <!-- <div class="mb-3">
+                        <label for="phone" class="form-label">Gender</label></div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                           
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender"
+                                        id="gender">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Male
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender"
+                                        id="gender">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender"
+                                        id="gender">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                       
+                    </div><br> -->
+                    
+
+                    <div class="d-grid gap-2">
+                        
+                        <button class="btn btn-primary" type="submit">Registration</button>
+                      </div>
+                </form>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+
+</html> 
+
+
+ <!-- {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style8.css' %}" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+<div class="row">
+    <div class="col-sm-8 offset-2">
+        <h1 style="text-align:center; color: aliceblue; background-color:black">Book Ambulance </h1>
+        <form action="" method="post">
+        {% csrf_token %}
+
+        {{form.as_p}}
+
+        <div class="d-grid gap-2">
+                        
+            <button class="btn btn-primary" type="submit">Book Ambulance</button>
+          </div>
+    </form>
+    </div>
+</div>
+</div>
+<script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+</body>
+
+</html> -->
